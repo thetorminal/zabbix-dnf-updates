@@ -21,15 +21,15 @@ Tested with:
 #### On all hosts you want to monitor:
 * Install and configure package zabbix-agent2 (if not installed):  
      ```sh
-     apt-get install zabbix-agent2
+     sudo apt-get install zabbix-agent2
      ```
 * add file "yum.conf" to /etc/zabbix/zabbix_agent2.d/
      ```sh
-     curl -L https://raw.githubusercontent.com/thetorminal/zabbix-dnf-updates/refs/heads/main/dnf.conf -o /etc/zabbix/zabbix_agent2.d/dnf.conf
+     sudo curl -L https://raw.githubusercontent.com/thetorminal/zabbix-dnf-updates/refs/heads/main/dnf.conf -o /etc/zabbix/zabbix_agent2.d/dnf.conf
      ```  
 * restart zabbix-agent2
      ```sh
-     systemctl restart zabbix-agent2
+     sudo systemctl restart zabbix-agent2
      ```
      
 ## Version History
